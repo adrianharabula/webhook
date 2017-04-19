@@ -1,12 +1,15 @@
-#Docker [almir/webhook](https://hub.docker.com/r/almir/webhook/) image with git installed
+# Docker [almir/webhook](https://hub.docker.com/r/almir/webhook/) image with git installed
 
 ## How to use git webhook to make a pull on a remote server.
 
 Create a ssh key with `ssh-keygen -f id_rsa`. Copy id_rsa to webhook/.ssh.  
+
 Upload id_rsa.pub to github as a git deploy key.  
+
 Update private key permissions:  
 `chmod 400 webhook/.ssh/id_rsa`
-Update hook script permissions:
+
+Update hook script permissions:  
 `chmod +x webhook/scripts/pull.sh`
 
 Run the image either with docker run:  
@@ -41,4 +44,4 @@ volumes:
 
 ```
 
-Then go to [localhost:9000/hooks/pull](localhost:9000/hooks/pull). This will execute `git pull origin master` in the gitrepo folder as root user.
+Then go to [localhost:9000/hooks/pull](http://localhost:9000/hooks/pull). This will execute `git pull origin master` in the gitrepo folder as root user.
