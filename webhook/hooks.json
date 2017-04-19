@@ -1,0 +1,7 @@
+[
+  {
+    "id": "pull",
+    "execute-command": "/var/scripts/pull.sh",
+    "command-working-directory": "/root/gitrepo"
+  }
+]
