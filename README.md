@@ -1,6 +1,6 @@
 # Docker [almir/webhook](https://hub.docker.com/r/almir/webhook/) image with git installed
 
-## How to use git webhook to make a pull on a remote server.
+## How to use git webhook to make a pull
 
 Create a ssh key with `ssh-keygen -f id_rsa`. Copy id_rsa to webhook/.ssh.  
 
